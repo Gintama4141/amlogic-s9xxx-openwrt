@@ -199,6 +199,7 @@ rebuild_firmware() {
         \
         ${config_list} \
         "
+
     # Rebuild firmware
     make image PROFILE="" PACKAGES="${my_packages}" FILES="files"
 
@@ -206,6 +207,7 @@ rebuild_firmware() {
     echo -e "${INFO} [ ${openwrt_dir}/bin/targets/*/* ] directory status: $(ls bin/targets/*/* -al 2>/dev/null)"
     echo -e "${SUCCESS} The rebuild is successful, the current path: [ ${PWD} ]"
 }
+
 
 # Show welcome message
 echo -e "${STEPS} Welcome to Rebuild OpenWrt Using the Image Builder."
