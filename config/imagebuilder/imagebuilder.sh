@@ -133,6 +133,7 @@ custom_packages() {
     sync && sleep 3
     echo -e "${INFO} [ packages ] directory status: $(ls -al 2>/dev/null)"
 }
+
 # Add custom packages, lib, theme, app and i18n, etc.
 custom_config() {
     cd ${imagebuilder_path}
@@ -191,12 +192,6 @@ rebuild_firmware() {
         \
         luci-app-amlogic luci-i18n-amlogic-zh-cn \
         \
-        luci-app-ramfree luci-app-3ginfo-lite luci-app-sms-tool-js \
-        modemmanager-rpcd luci-proto-modemmanager libqmi libmbim modemmanager sms-tool \
-        luci-app-argon-config luci-theme-argon luci-app-diskman atinout luci-app-poweroff \
-        xmm-modem luci-app-lite-watchdog luci-theme-alpha luci-app-cpu-status-mini \
-        luci-app-disks-info luci-app-log-viewer luci-app-temp-status \
-        \
         ${config_list} \
         "
 
@@ -207,7 +202,6 @@ rebuild_firmware() {
     echo -e "${INFO} [ ${openwrt_dir}/bin/targets/*/* ] directory status: $(ls bin/targets/*/* -al 2>/dev/null)"
     echo -e "${SUCCESS} The rebuild is successful, the current path: [ ${PWD} ]"
 }
-
 
 # Show welcome message
 echo -e "${STEPS} Welcome to Rebuild OpenWrt Using the Image Builder."
