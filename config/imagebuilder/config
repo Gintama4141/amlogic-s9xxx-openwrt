@@ -14,15 +14,6 @@
 #
 # 1. Applications
 #
-CONFIG_PACKAGE_luci-app-3ginfo-lite=y
-CONFIG_PACKAGE_luci-app-lite-watchdog=y
-CONFIG_PACKAGE_luci-app-nikki=y
-CONFIG_PACKAGE_luci-app-netmonitor=y
-CONFIG_PACKAGE_luci-app-poweroff=y
-CONFIG_PACKAGE_luci-app-ramfree=y
-CONFIG_PACKAGE_luci-app-sms-tool-js=y
-CONFIG_PACKAGE_luci-app-temp-status=y
-CONFIG_PACKAGE_luci-app-tinyfm=y
 # CONFIG_PACKAGE_luci-app-acl is not set
 # CONFIG_PACKAGE_luci-app-acme is not set
 # CONFIG_PACKAGE_luci-app-adblock is not set
