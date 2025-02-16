@@ -133,7 +133,6 @@ custom_packages() {
     sync && sleep 3
     echo -e "${INFO} [ packages ] directory status: $(ls -al 2>/dev/null)"
 }
-
 # Add custom packages, lib, theme, app and i18n, etc.
 custom_config() {
     cd ${imagebuilder_path}
@@ -192,9 +191,14 @@ rebuild_firmware() {
         \
         luci-app-amlogic luci-i18n-amlogic-zh-cn \
         \
+        luci-app-ramfree luci-app-3ginfo-lite luci-app-sms-tool-js \
+        modemmanager-rpcd luci-proto-modemmanager libqmi libmbim modemmanager sms-tool \
+        luci-app-argon-config luci-theme-argon luci-app-diskman atinout luci-app-poweroff \
+        xmm-modem luci-app-lite-watchdog luci-theme-alpha luci-app-cpu-status-mini \
+        luci-app-disks-info luci-app-log-viewer luci-app-temp-status \
+        \
         ${config_list} \
         "
-
     # Rebuild firmware
     make image PROFILE="" PACKAGES="${my_packages}" FILES="files"
 
