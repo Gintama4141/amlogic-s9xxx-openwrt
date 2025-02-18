@@ -39,7 +39,7 @@
 make_path="${PWD}"
 openwrt_dir="imagebuilder"
 imagebuilder_path="${make_path}/${openwrt_dir}"
-custom_files_path="${make_path}/files"
+custom_files_path="${make_path}/config/imagebuilder/files"
 custom_packages_path="${make_path}/packages"
 custom_scripts_file="${make_path}/scripts"
 
