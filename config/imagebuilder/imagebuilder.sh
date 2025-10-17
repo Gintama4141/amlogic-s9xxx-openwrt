@@ -192,6 +192,16 @@ rebuild_firmware() {
         \
         luci-app-amlogic luci-i18n-amlogic-zh-cn \
         \
+        libc bash block-mount coreutils-base64 coreutils-sleep coreutils-stat coreutils-stty \
+        curl wget-ssl tar unzip parted losetup uhttpd uhttpd-mod-ubus luci luci-base \
+        luci-mod-admin-full luci-lib-ip luci-compat luci-ssl"\
+        \
+        kmod-mii kmod-usb-net kmod-usb-wdm kmod-usb-net-rndis kmod-usb-net-cdc-ether kmod-usb-net-cdc-ncm kmod-usb-net-sierrawireless \
+        kmod-usb-net-qmi-wwan uqmi kmod-usb-acm kmod-usb-net-huawei-cdc-ncm kmod-usb-net-cdc-mbim umbim \
+        kmod-usb-serial-option kmod-usb-serial kmod-usb-serial-wwan kmod-usb-serial-qualcomm kmod-usb-serial-sierrawireless modemmanager luci-proto-modemmanager \
+        mbim-utils qmi-utils kmod-usb-uhci kmod-usb-ohci kmod-usb2 kmod-usb3 usb-modeswitch usbutils \
+        luci-proto-qmi luci-proto-ncm xmm-modem luci-proto-xmm kmod-nls-utf8 kmod-macvlan"\
+        \
         ${config_list} \
         "
 
